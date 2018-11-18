@@ -2,12 +2,48 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <title>練習12</title>
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <title>練習13</title>
   </head>
   <body>
+
+     <section class="image">
+     <div class="center">
+	<div>
+	  <img src="img/a.jpg" id="bigimg">
+	</div>
+	<ul>
+	  <li><img src="img/b.jpg" class="thumb" data-image="b"></li>
+	  <li><img src="img/c.jpg" class="thumb" data-image="c"></li>
+	  <li><img src="img/d.jpg" class="thumb" data-image="d"></li>
+	</ul>
+     </div>
+     </section>
+
+     <nav>
+       <form id="form">
+	<select name="select">
+	  <option value="index.html">メインページ</option>
+	  <option value="other.html">別のページ</option>
+　　    </select>
+　　　</form>
+    </nav>
+
     <section>
       <p id="countdown"></p>
+      <p id="cookie"></p>
+      <form action="#" id="remove_cookie">
+	<input type="submit" value="Cookieの削除">
+      </form>
     </section>
+
+     <section>
+	<h1>フォーム</h1>
+	<form action="#" id="form">
+	  <input type="text" name="word">
+	  <input type="submit" value="おしますか？">
+	</form>
+     </section>
     <script type="text/javascript" src="js/default.js"></script>
   </body>
 </html>
