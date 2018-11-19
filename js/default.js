@@ -46,15 +46,6 @@ var refresh= function(){
 update();
 
 
-
-
-//フォーム
-document.getElementById('form').onsubmit = function(){
-  window.alert(document.getElementById('form').word.value);
-  return false;
-};
-
-
 //クッキー
 function setCookie(c_name,value,expiredays){
    var extime = new Date().getTime();
@@ -108,3 +99,10 @@ for(idx in thmubs){
 	document.getElementById("bigimg").sec = 'img/' + this.dataset.image + '.jpg';
     }
 }
+
+
+//フォーム
+document.getElementById('form').onsubmit = function(){
+  window.alert(document.getElementById('form').word.value);
+  return false;
+};
